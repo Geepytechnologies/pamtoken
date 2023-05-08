@@ -1,0 +1,13 @@
+.glass {
+  /* background: rgb(6, 107, 87, 0.3); */
+  background: #548ab64d;
+  border-radius: 16px;
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
+  /* box-shadow: 0 4px 17px rgba(255, 255, 255, 0.5); */
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
