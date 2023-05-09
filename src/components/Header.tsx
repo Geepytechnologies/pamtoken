@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import { HiMenuAlt4 } from "react-icons/hi";
-import { AiFillContacts, AiOutlineClose } from "react-icons/ai";
-import { BsCloudDownload } from "react-icons/bs";
-import { FaBlog, FaProjectDiagram, FaUserAlt } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
+import { BsDiscord, BsTwitter, FaTelegramPlane } from "react-icons/all";
 import { Link } from "react-router-dom";
 
 type Props = {};
@@ -124,27 +122,16 @@ const Header = (props: Props) => {
             </div>
           </div>
           <div className="flex items-center justify-center mt-2">
-            <div className="">
-              <SocialIcon
-                url="https://twitter.com/Godspower_EC"
-                fgColor="gray"
-                bgColor="transparent"
-              />
-              <SocialIcon
-                url="https://www.linkedin.com/in//godspower-enwereuzor-4861571a2"
-                fgColor="gray"
-                bgColor="transparent"
-              />
-              <SocialIcon
-                url="https://instagram.com/geepy_c"
-                fgColor="gray"
-                bgColor="transparent"
-              />
-              <SocialIcon
-                url="https://github.com/Geepytechnologies"
-                fgColor="gray"
-                bgColor="transparent"
-              />
+            <div className="gap-3 flex items-center justify-center">
+              <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
+                <BsTwitter className="text-gray-500 text-[28px] " />
+              </Link>
+              <Link to="https://t.me/PamTokenChannel">
+                <FaTelegramPlane className="text-gray-500 text-[28px] " />
+              </Link>
+              <Link to="https://discord.gg/R7F8NDpdwT">
+                <BsDiscord className="text-gray-500 text-[28px] " />
+              </Link>
             </div>
           </div>
         </div>

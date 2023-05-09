@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
-import { SocialIcon } from "react-social-icons";
+import { BsDiscord, FaTelegramPlane, BsTwitter } from "react-icons/all";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -28,27 +29,16 @@ const Footer = (props: Props) => {
         {/* socials */}
         <div className="basis-[30%] my-2 items-center justify-center flex  md:flex-col">
           <p className="text-gray-500 hidden md:flex">Socials</p>
-          <div>
-            <SocialIcon
-              url="https://twitter.com/Godspower_EC"
-              fgColor="gray"
-              bgColor="transparent"
-            />
-            <SocialIcon
-              url="https://www.linkedin.com/in//godspower-enwereuzor-4861571a2"
-              fgColor="gray"
-              bgColor="transparent"
-            />
-            <SocialIcon
-              url="https://instagram.com/geepy_c"
-              fgColor="gray"
-              bgColor="transparent"
-            />
-            <SocialIcon
-              url="https://github.com/Geepytechnologies"
-              fgColor="gray"
-              bgColor="transparent"
-            />
+          <div className="gap-3 flex items-center justify-center">
+            <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
+              <BsTwitter className="text-gray-500 text-[28px] " />
+            </Link>
+            <Link to="https://t.me/PamTokenChannel">
+              <FaTelegramPlane className="text-gray-500 text-[28px] " />
+            </Link>
+            <Link to="https://discord.gg/R7F8NDpdwT">
+              <BsDiscord className="text-gray-500 text-[28px] " />
+            </Link>
           </div>
         </div>
       </div>
