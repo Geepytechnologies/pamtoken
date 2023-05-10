@@ -1,13 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 const Roadmap = (props: Props) => {
   return (
-    <div className="bg-base">
-      <p className="font-[500] text-white">Roadmap</p>
+    <div className="bg-base pb-[50px] relative">
+      <img
+        src="/space.jpeg"
+        className="absolute top-0 w-full h-full opacity-10"
+      />
+      <div className="p-2">
+        <p className="font-[600] text-white text-center py-4 font-arco tracking-wider text-[30px]">
+          Roadmap
+        </p>
 
-      <img src="/roadmap.svg" />
+        <motion.img
+          initial={{
+            opacity: 0,
+            scale: 0.5,
+          }}
+          whileInView={{
+            opacity: 1,
+            scale: 1,
+          }}
+          transition={{
+            duration: 1.2,
+          }}
+          src="/roadmap.svg"
+        />
+      </div>
     </div>
   );
 };

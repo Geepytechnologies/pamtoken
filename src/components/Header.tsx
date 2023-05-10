@@ -42,20 +42,17 @@ const Header = (props: Props) => {
               className="w-[50px] h-[50px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
-            <h2 className="text-white text-[40px] font-rob">Pam</h2>
+            <h2 className="text-mygreen text-[40px] font-arco">Pam</h2>
           </motion.div>
           <ul className="text-gray-300 hidden  lg:flex gap-9 text-[20px] items-center justify-center">
             <li>
-              <Link to="#about">Ecosystem</Link>
+              <a href="#footer">Community</a>
             </li>
             <li>
-              <Link to="#projects">Community</Link>
+              <a href="#roadmap">Roadmap</a>
             </li>
             <li>
-              <Link to="#contact">Roadmap</Link>
-            </li>
-            <li>
-              <Link to="">What is Pam?</Link>
+              <a href="#about">What is Pam?</a>
             </li>
           </ul>
           <motion.a
@@ -72,7 +69,7 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            href=""
+            href="#buy"
             className="flex-row cursor-pointer hidden lg:flex text-[18px] px-4 items-center text-mygreen mr-4 rounded-md  border-2 border-mygreen"
           >
             Buy Now
@@ -106,28 +103,29 @@ const Header = (props: Props) => {
           }`}
         >
           <div className="space-y-3 text-white">
-            <Link
-              to="#projects"
-              className="flex gap-1 items-center justify-center"
-            >
-              <p>Ecosystem</p>
-            </Link>
-            <Link
-              to="#contact"
+            <a
+              href="#footer"
               className="flex gap-1 items-center justify-center"
             >
               <p>Community</p>
-            </Link>
+            </a>
             <div className="flex gap-1 items-center justify-center">
-              <p>Roadmap</p>
+              <a href="#roadmap">
+                <p>Roadmap</p>
+              </a>
             </div>
+            <a href="#about" className="flex gap-1 items-center justify-center">
+              <p>What is Pam?</p>
+            </a>
             <div className="flex items-center justify-center">
-              <button className="bg-mygreen p-2 rounded-md text-white font-[500]">
-                Buy Now
-              </button>
+              <a href="#buy">
+                <button className="bg-mygreen p-2 rounded-md text-white font-[500]">
+                  Buy Now
+                </button>
+              </a>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-2">
+          <div className="flex items-center justify-center mt-4">
             <div className="text-light text-[30px] flex gap-3">
               <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
                 <BsTwitter />

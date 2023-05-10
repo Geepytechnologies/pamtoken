@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Tokensupply from "../components/Tokensupply";
 import Roadmap from "../components/Roadmap";
 import Howtobuy from "../components/Howtobuy";
+import About from "../components/About";
 
 type Props = {};
 
@@ -13,10 +14,21 @@ const Home = (props: Props) => {
     <div className="font-mont">
       <Header />
       <Hero />
-      <Tokensupply />
-      <Howtobuy />
-      <Roadmap />
-      <Footer />
+      <section id="about">
+        <About />
+      </section>
+      <section id="tokenonomics">
+        <Tokensupply />
+      </section>
+      <section id="buy">
+        <Howtobuy />
+      </section>
+      <section id="roadmap">
+        <Roadmap />
+      </section>
+      <section id="footer">
+        <Footer />
+      </section>
     </div>
   );
 };

@@ -18,12 +18,11 @@ const Footer = (props: Props) => {
               className="w-[50px] h-[50px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
-            <h2 className="text-white text-[40px] font-rob">Pam</h2>
+            <h2 className="text-[40px] font-arco text-mygreen">Pam</h2>
           </div>
-          <p className="text-white text-center md:text-left p-2">
-            Pam is an experimental meme token with 0 intrinsic value
-            <br /> or expectation of financial return. There is no formal team
-            or roadmap. <br />
+          <p className="text-white text-center text-[14px] md:text-left p-2">
+            Pam is an experimental meme token with 0 intrinsic value or
+            expectation of financial return. There is no formal team or roadmap.
             The token is completely useless and for fun purposes only.
           </p>
         </div>

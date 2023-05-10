@@ -22,6 +22,7 @@ module.exports = {
       popp: ["Poppins", "sans-serif"],
       open: ["Open Sans", "sans-serif"],
       inter: ["Inter", "sans-serif"],
+      arco: ["arco", "sans-serif"],
     },
   },
   plugins: [],
