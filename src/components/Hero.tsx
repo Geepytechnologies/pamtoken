@@ -4,10 +4,12 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="bg-[url('/image3.jpeg')] h-[500px]">
-      {/* <div className="glass w-[500px] h-[500px] rounded-lg">
-        <p className="font-[600] text-white">Hello</p>
-      </div> */}
+    <div className="bg-[url('/image3.jpeg')] w-full bg-fixed h-[500px]">
+      <div className="rounded-lg">
+        <p className="font-[600] text-white text-[30px]">
+          Creating Wealth, Handshakes, Hugs and Other Goodness with the Pam.
+        </p>
+      </div>
     </div>
   );
 };
