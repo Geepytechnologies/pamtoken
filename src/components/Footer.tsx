@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineCopyright } from "react-icons/ai";
-import { BsDiscord, BsTwitter, FaTelegramPlane } from "react-icons/all";
+import { BsDiscord, BsTwitter, FaTelegramPlane, GrMail } from "react-icons/all";
 import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 
@@ -8,6 +8,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   const year = new Date().getFullYear();
+  const email = "contact@pamtoken.io";
   return (
     <div className="bg-base flex flex-col">
       <div className="flex flex-col md:flex-row ">
@@ -40,6 +41,9 @@ const Footer = (props: Props) => {
               <Link to="https://discord.gg/R7F8NDpdwT">
                 <BsDiscord />
               </Link>
+              <a href={`mailto:${email}`}>
+                <GrMail />
+              </a>
             </div>
           </div>
         </div>

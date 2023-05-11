@@ -28,7 +28,7 @@ const About = (props: Props) => {
           {!show && (
             <button
               onClick={handleshow}
-              className="bg-mygreen mt-2 text-white font-[500] px-2 py-2 rounded-md border-2 border-gray-500 shadow-2xl"
+              className="bg-mygreen mt-2 text-white font-[500] px-2 py-2 rounded-md border-2 border-white shadow-2xl"
             >
               See more
             </button>
@@ -49,7 +49,7 @@ const About = (props: Props) => {
               </p>
               <button
                 onClick={handleshow}
-                className="bg-mygreen mt-2 text-white font-[500] px-2 py-2 rounded-md border-2 border-gray-500 shadow-2xl"
+                className="bg-mygreen mt-2 text-white font-[500] px-2 py-2 rounded-md border-2 border-white shadow-2xl"
               >
                 See less
               </button>

@@ -87,7 +87,7 @@ const Howtobuy = (props: Props) => {
               Connect to pancakeSwap. Go to{" "}
               <a href="https://pancakeswap.finance/">pancakeswap.finance</a> in
               google chrome or on the browser inside your Metamask app. Connect
-              your wallet and waste the $PAM token address into PancakeSwap,
+              your wallet and paste the $PAM token address into PancakeSwap,
               select PAM and confirm(sign the transaction) when metamask prompts
               you for a wallet signature.
             </p>

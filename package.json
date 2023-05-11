@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.0.1",
     "dotenv": "^16.0.3",
     "formik": "^2.2.9",
     "framer-motion": "^10.12.8",

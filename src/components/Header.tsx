@@ -6,6 +6,7 @@ import {
   BsDiscord,
   BsTwitter,
   FaTelegramPlane,
+  GrMail,
   HiMenuAlt4,
 } from "react-icons/all";
 
@@ -18,6 +19,7 @@ const Header = (props: Props) => {
   const togglemenu = () => {
     setMenu(!menu);
   };
+  const email = "contact@pamtoken.io";
   return (
     <>
       <header className="sticky bg-[rgb(36,36,36)] top-0 flex flex-col  w-full z-20  px-3 py-4">
@@ -136,6 +138,9 @@ const Header = (props: Props) => {
               <Link to="https://discord.gg/R7F8NDpdwT">
                 <BsDiscord />
               </Link>
+              <a href={`mailto:${email}`}>
+                <GrMail />
+              </a>
             </div>
           </div>
         </div>
