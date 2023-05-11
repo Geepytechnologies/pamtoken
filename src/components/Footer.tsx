@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
             />
             <h2 className="text-[40px] font-arco text-mygreen">Pam</h2>
           </div>
-          <p className="text-white text-center text-[14px] md:text-left p-2">
+          <p className="text-white text-center text-[12px] lg:text-[14px] md:text-left p-2">
             Pam is an experimental meme token with 0 intrinsic value or
             expectation of financial return. There is no formal team or roadmap.
             The token is completely useless and for fun purposes only.
@@ -34,7 +34,7 @@ const Footer = (props: Props) => {
               <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
                 <BsTwitter />
               </Link>
-              <Link to="https://t.me/PamTokenChannel">
+              <Link to="https://t.me/PamTokenArmy">
                 <FaTelegramPlane />
               </Link>
               <Link to="https://discord.gg/R7F8NDpdwT">
@@ -47,7 +47,9 @@ const Footer = (props: Props) => {
       <hr />
       <div className="flex items-center justify-center p-5 gap-2 text-white">
         <AiOutlineCopyright />
-        <p>{year} | The Pam Project. All rights reserved.</p>
+        <p className="text-[12px] lg:text-[14px]">
+          {year} | The Pam Project. All rights reserved.
+        </p>
       </div>
     </div>
   );

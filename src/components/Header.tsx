@@ -88,7 +88,7 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            className="flex flex-row lg:hidden  text-[30px] font-[500]  text-gray-300 items-center"
+            className="flex flex-row lg:hidden cursor-pointer text-[30px] font-[500]  text-gray-300 items-center"
           >
             {!menu && <HiMenuAlt4 onClick={() => togglemenu()} />}
             {menu && <AiOutlineClose onClick={() => togglemenu()} />}
@@ -130,7 +130,7 @@ const Header = (props: Props) => {
               <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
                 <BsTwitter />
               </Link>
-              <Link to="https://t.me/PamTokenChannel">
+              <Link to="https://t.me/PamTokenArmy">
                 <FaTelegramPlane />
               </Link>
               <Link to="https://discord.gg/R7F8NDpdwT">

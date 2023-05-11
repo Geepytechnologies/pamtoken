@@ -7,12 +7,12 @@ type Props = {};
 const Howtobuy = (props: Props) => {
   return (
     <div className="bg-[url('/coin2.jpeg')] bg-cover w-full h-[1000px] relative">
-      <div className="w-full h-[1000px] absolute top-0 bg-[rgba(0,0,0,0.6)]"></div>
+      <div className="w-full h-[1000px] absolute top-0 bg-[rgba(0,0,0,0.7)]"></div>
       <div className="absolute h-full top-0 flex flex-col w-full ">
         <p className="font-[600] text-white text-center py-4 font-arco text-[30px]">
           How to buy Pam?
         </p>
-        <div className="flex w-full flex-[3] gap-4 flex-col items-center justify-center text-white">
+        <div className="flex w-full flex-[3] gap-5 flex-col items-center justify-center text-white">
           {/* step 1 */}
           <motion.div
             initial={{

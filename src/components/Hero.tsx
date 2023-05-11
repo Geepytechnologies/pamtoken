@@ -12,8 +12,8 @@ const Hero = (props: Props) => {
           PAM
         </p>
         <p className="font-[400] text-white text-center text-[20px] lg:text-[30px] pl-3">
-          PAM is for the people, Creating Wealth &#x1F92E;, Handshakes, Hugs and
-          Other Goodness with the Pam. &#x1F590;
+          Creating Wealth &#x1F4B0;, Handshakes, Hugs and Other Goodness with
+          the Pam. &#x1F590;
         </p>
         <div className="flex gap-2 lg:mt-[20px]">
           <a href="#buy">
