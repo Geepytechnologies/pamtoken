@@ -132,7 +132,7 @@ const Header = (props: Props) => {
               <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
                 <BsTwitter />
               </Link>
-              <Link to="https://t.me/PamTokenArmy">
+              <Link to="https://t.me/PAMCommunity">
                 <FaTelegramPlane />
               </Link>
               <Link to="https://discord.gg/R7F8NDpdwT">
