@@ -46,7 +46,7 @@ const Tokensupply = (props: Props) => {
             <div className="bg-[#582E2F] h-5 w-6"></div>
             <span>-</span>
             <p className="text-black">
-              73.92 Trillion Pam tokens for liquidity provision on PancakeSwap
+              73.92 Trillion Pam tokens for PinkSale FairLaunch and liquidity provision on PancakeSwap
               exchange
             </p>
           </div>
@@ -55,7 +55,7 @@ const Tokensupply = (props: Props) => {
             <span>-</span>
             <p>
               17 Trillion Pam tokens reserved for centralised exchange (CEX)
-              listings.
+              listings and liquidity.
             </p>
           </div>
           <div className="flex gap-2 items-center pl-3">
@@ -70,7 +70,7 @@ const Tokensupply = (props: Props) => {
             <div className="bg-[#9F9C5D] h-5 w-6"></div>
             <span>-</span>
             <p>
-              4.08 Trillion Pam tokens for marketing, promotions and
+              4.08 Trillion Pam tokens for marketing, airdrops, promotions and
               Partnerships.
             </p>
           </div>
