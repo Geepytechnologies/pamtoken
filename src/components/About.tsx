@@ -9,7 +9,6 @@ const About = (props: Props) => {
     setShow(!show);
   };
   const lg = window.innerWidth >= 1024;
-  console.log(lg);
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth >= 1024) {
