@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 type Props = {};
 
@@ -8,6 +8,19 @@ const About = (props: Props) => {
   const handleshow = () => {
     setShow(!show);
   };
+  const lg = window.innerWidth >= 1024;
+  console.log(lg);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 1024) {
+        setShow(true);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="py-[50px]">
       <p className="font-[600] text-center py-4 font-arco text-light text-[30px]">
@@ -47,12 +60,14 @@ const About = (props: Props) => {
                 the exciting possibilities that lie ahead for pam Token and its
                 community.
               </p>
-              <button
-                onClick={handleshow}
-                className="bg-mygreen mt-2 text-white font-[500] px-2 py-2 rounded-md border-2 border-white shadow-2xl"
-              >
-                See less
-              </button>
+              {!lg && (
+                <button
+                  onClick={handleshow}
+                  className="bg-mygreen mt-2 text-white font-[500] px-2 py-2 rounded-md border-2 border-white shadow-2xl"
+                >
+                  See less
+                </button>
+              )}
             </>
           )}
         </div>

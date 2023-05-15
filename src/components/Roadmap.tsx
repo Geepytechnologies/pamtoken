@@ -5,12 +5,12 @@ type Props = {};
 
 const Roadmap = (props: Props) => {
   return (
-    <div className="bg-base pb-[50px] relative">
-      <img
+    <div className=" pb-[50px] relative">
+      {/* <img
         src="/space.jpeg"
         className="absolute top-0 w-full h-full opacity-10"
-      />
-      <div className="p-2">
+      /> */}
+      <div className="p-2 flex flex-col items-center justify-center">
         <p className="font-[600] text-white text-center py-4 font-arco tracking-wider text-[30px]">
           Roadmap
         </p>

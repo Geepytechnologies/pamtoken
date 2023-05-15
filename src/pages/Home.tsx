@@ -20,12 +20,14 @@ const Home = (props: Props) => {
       <section id="tokenonomics">
         <Tokensupply />
       </section>
-      <section id="buy">
-        <Howtobuy />
-      </section>
-      <section id="roadmap">
-        <Roadmap />
-      </section>
+      <div className="bg-base w-full">
+        <section id="buy">
+          <Howtobuy />
+        </section>
+        <section id="roadmap">
+          <Roadmap />
+        </section>
+      </div>
       <section id="footer">
         <Footer />
       </section>
