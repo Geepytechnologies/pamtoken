@@ -8,7 +8,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   const year = new Date().getFullYear();
-  const email = "contact@pamtoken.io";
+  const email = "Pamtoken4@gmail.com";
   return (
     <div className="bg-base flex flex-col">
       <div className="flex flex-col md:flex-row ">
