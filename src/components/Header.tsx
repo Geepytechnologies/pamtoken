@@ -19,7 +19,7 @@ const Header = (props: Props) => {
   const togglemenu = () => {
     setMenu(!menu);
   };
-  const email = "contact@pamtoken.io";
+  const email = "Pamtoken4@gmail.com";
   return (
     <>
       <header className="sticky bg-[rgb(36,36,36)] top-0 flex flex-col  w-full z-20  px-3 py-4">
