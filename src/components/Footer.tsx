@@ -46,6 +46,9 @@ const Footer = (props: Props) => {
               </a>
             </div>
           </div>
+          <div className="text-light mt-3">
+            <p>Email: {email}</p>
+          </div>
         </div>
       </div>
       <hr />
