@@ -28,7 +28,7 @@ const Footer = (props: Props) => {
           </p>
         </div>
         {/* socials */}
-        <div className="basis-[30%] my-2 items-center justify-center flex  md:flex-col">
+        <div className="basis-[30%] my-2 items-center justify-center flex  flex-col">
           <p className="text-gray-500 hidden md:flex">Socials</p>
           <div className="flex items-center justify-center mt-2">
             <div className="text-light text-[30px] flex gap-3">
@@ -52,7 +52,7 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <hr />
-      <div className="flex items-center justify-center p-5 gap-2 text-white">
+      <div className="flex  items-center justify-center p-5 gap-2 text-white">
         <AiOutlineCopyright />
         <p className="text-[12px] lg:text-[14px]">
           {year} | The Pam Project. All rights reserved.
