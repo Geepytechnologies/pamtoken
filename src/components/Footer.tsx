@@ -32,10 +32,10 @@ const Footer = (props: Props) => {
           <p className="text-gray-500 hidden md:flex">Socials</p>
           <div className="flex items-center justify-center mt-2">
             <div className="text-light text-[30px] flex gap-3">
-              <Link to="https://twitter.com/pamtoken10?t=uQCeam6fAmCTeF-dYHSfDQ&s=09">
+              <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
                 <BsTwitter />
               </Link>
-              <Link to="https://t.me/PAMCommunity">
+              <Link to="https://t.me/PAMCOMUNITY">
                 <FaTelegramPlane />
               </Link>
               <Link to="https://discord.gg/R7F8NDpdwT">
