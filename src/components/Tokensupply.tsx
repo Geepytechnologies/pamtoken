@@ -78,10 +78,10 @@ const Tokensupply = (props: Props) => {
         </div>
       </div>
       {/* Announcement */}
-      {/* <div className="w-[70%] p-3 ml-3 font-[500] text-mygreen italic flex flex-col gap-3">
-        <p>70% LP token will be burnt after 30 Days of token listing.</p>
+      <div className="w-[70%] p-3 ml-3 font-[500] text-mygreen italic flex flex-col gap-3">
+        {/* <p>70% LP token will be burnt after 30 Days of token listing.</p> */}
         <p>Farming, Cex Listing and Moon...</p>
-      </div> */}
+      </div>
       {/* other supplies */}
       <div className="p-2 pb-[30px] text-[14px] flex flex-col gap-3 font-[500]">
         <div>
