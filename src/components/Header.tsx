@@ -22,7 +22,7 @@ const Header = (props: Props) => {
   const email = "Pamtoken4@gmail.com";
   return (
     <>
-      <header className="sticky bg-[rgb(36,36,36)] top-0 flex flex-col  w-full z-20  px-3 py-4">
+      <header className="flex flex-col  w-full  px-3 py-4">
         <div className="flex justify-between ">
           <motion.div
             initial={{
@@ -44,38 +44,25 @@ const Header = (props: Props) => {
               className="w-[50px] h-[50px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
-            <h2 className="text-mygreen text-[40px] font-arco">Pam</h2>
           </motion.div>
-          <ul className="text-gray-300 hidden  lg:flex gap-9 text-[20px] items-center justify-center">
+          <ul className="text-[#F6F6F6] hidden  lg:flex gap-9 text-[16px] items-center justify-center">
             <li>
-              <a href="#footer">Community</a>
+              <a href="#footer">Whitepaper</a>
             </li>
             <li>
-              <a href="#roadmap">Roadmap</a>
+              <a href="#roadmap">PAM NFT</a>
             </li>
             <li>
-              <a href="#about">What is Pam?</a>
+              <a href="#about">Coin market cap</a>
+            </li>
+            <li>
+              <a href="#about">Dexscrener</a>
+            </li>
+            <li>
+              <a href="#about">Pancake swap</a>
             </li>
           </ul>
-          <motion.a
-            initial={{
-              x: 500,
-              opacity: 0,
-              scale: 0.5,
-            }}
-            animate={{
-              x: 0,
-              opacity: 1,
-              scale: 1,
-            }}
-            transition={{
-              duration: 1.5,
-            }}
-            href="#buy"
-            className="flex-row cursor-pointer hidden lg:flex text-[18px] px-4 items-center text-mygreen mr-4 rounded-md  border-2 border-mygreen"
-          >
-            Buy Now
-          </motion.a>
+
           <motion.div
             initial={{
               x: 500,

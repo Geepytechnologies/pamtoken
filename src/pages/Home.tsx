@@ -11,26 +11,12 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className="font-mont">
+    <div className="font-mont bg-[#050006] min-h-screen">
       <Header />
       <Hero />
-      <section id="about">
-        <About />
-      </section>
-      <section id="tokenonomics">
-        <Tokensupply />
-      </section>
-      <div className="bg-base w-full">
-        <section id="buy">
-          <Howtobuy />
-        </section>
-        <section id="roadmap">
-          <Roadmap />
-        </section>
-      </div>
-      <section id="footer">
-        <Footer />
-      </section>
+
+      <section id="footer"></section>
+      <Footer />
     </div>
   );
 };

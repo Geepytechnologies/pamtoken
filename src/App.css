@@ -11,6 +11,11 @@
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
+.blurdiv {
+  border-radius: 348px;
+  background: #d40ba2;
+  filter: blur(250px);
+}
 
 @font-face {
   font-family: arco;
