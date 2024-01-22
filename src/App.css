@@ -1,3 +1,7 @@
+body {
+  font-family: matter;
+}
+
 .glass {
   /* background: rgb(6, 107, 87, 0.3); */
   background: #85a3bd4d;
@@ -16,9 +20,53 @@
   background: #d40ba2;
   filter: blur(250px);
 }
+.nftcard {
+  border-radius: 35px;
+  border: 0.898px solid rgba(212, 11, 162, 0.86);
+  background: rgba(212, 11, 162, 0.01);
+  backdrop-filter: blur(26.935401916503906px);
+}
+.stroketext {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #d2d2d2; /* WebKit browsers like Chrome and Safari */
+}
+.nfts:hover .nfts-slide {
+  animation-play-state: paused;
+}
+.nfts-slide {
+  animation: 5s slide infinite linear;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
 @font-face {
   font-family: arco;
   src: url("/fonts/ARCO.ttf");
   src: url("/fonts/ARCO2.otf");
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-Bold.ttf");
+  font-weight: bold;
 }

@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
         <div className="flex flex-col mb-[70px]">
           <div className="flex gap-2 p-2 items-center justify-center">
             <img
-              className="w-[50px] h-[50px] rounded-full border-1 border-white"
+              className="w-[100px] h-[100px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
           </div>
@@ -26,7 +26,7 @@ const Footer = (props: Props) => {
         {/* socials */}
         <div className="my-2 items-center justify-center flex  flex-col">
           <div className="flex items-center justify-center mt-2">
-            <div className="text-light text-[30px] flex gap-3">
+            <div className="text-light text-[30px] flex gap-8">
               <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
                 <img src="/X Logo.svg" />
               </Link>
@@ -40,15 +40,19 @@ const Footer = (props: Props) => {
           </div>
         </div>
         {/* contract address */}
-        <div className="border border-[#A7A5A5] flex items-center rounded-[16px]">
-          <p className="text-[#22E406] text-[36px] font-[600]">
-            Copy contract phrase
-          </p>
-          <div className="w-[1px] h-[38px] bg-[#F6F6F6]"></div>
-          <p className="text-[#F6F6F6]">0xB83b945C.....</p>
-          <div className="rounded-[16px] border flex items-center gap-3 border-[#22E406] text-[#F6F6F6] px-6 py-2">
-            <span>Copy</span>
-            <IoCopyOutline className="text-[40px]" />
+        <div className="w-full my-[80px] flex items-center justify-center">
+          <div className="border w-[70%] py-2 border-[#A7A5A5] flex items-center justify-center gap-8  rounded-[16px]">
+            <div className="gap-2 flex items-center">
+              <p className="text-[#22E406] text-[36px] font-[600]">
+                Copy contract phrase
+              </p>
+              <div className="w-[3px] h-[38px] bg-[#F6F6F6]"></div>
+            </div>
+            <p className="text-[#F6F6F6] text-[36px]">0xB83b945C.....</p>
+            <div className="rounded-[16px] text-[36px] border flex items-center gap-3 border-[#22E406] text-[#F6F6F6] px-6 py-2">
+              <span>Copy</span>
+              <IoCopyOutline className="text-[40px]" />
+            </div>
           </div>
         </div>
       </div>
