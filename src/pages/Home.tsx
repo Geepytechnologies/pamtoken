@@ -2,16 +2,19 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Nfts from "../components/Nfts";
+import Tokensupply from "../components/Tokensupply";
+import Roadmap from "../components/Roadmap";
+import Howtobuy from "../components/Howtobuy";
+import About from "../components/About";
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className=" bg-[#050006] min-h-screen">
+    <div className="font-mont bg-[#050006] min-h-screen">
       <Header />
       <Hero />
-      <Nfts />
+
       <section id="footer"></section>
       <Footer />
     </div>

@@ -8,7 +8,6 @@ import {
   FaTelegramPlane,
   GrMail,
   HiMenuAlt4,
-  HiOutlineMenu,
 } from "react-icons/all";
 
 import { Link } from "react-router-dom";
@@ -23,11 +22,7 @@ const Header = (props: Props) => {
   const email = "Pamtoken4@gmail.com";
   return (
     <>
-      <header className="flex flex-col   w-full  px-3 py-4">
-        <div className="relative h-full w-full">
-          <div className="w-[250px] h-[250px] blurdiv absolute top-0 "></div>
-        </div>
-
+      <header className="flex flex-col  w-full  px-3 py-4">
         <div className="flex justify-between ">
           <motion.div
             initial={{
@@ -43,10 +38,10 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            className="flex gap-2 z-[200]"
+            className="flex gap-2"
           >
             <img
-              className="w-[60px] h-[60px] rounded-full border-1 border-white"
+              className="w-[50px] h-[50px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
           </motion.div>
@@ -82,74 +77,57 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            className="flex flex-row lg:hidden cursor-pointer text-[40px] font-[500]  text-gray-300 items-center"
+            className="flex flex-row lg:hidden cursor-pointer text-[30px] font-[500]  text-gray-300 items-center"
           >
-            {!menu && <HiOutlineMenu onClick={() => togglemenu()} />}
-            {/* {menu && <AiOutlineClose onClick={() => togglemenu()} />} */}
+            {!menu && <HiMenuAlt4 onClick={() => togglemenu()} />}
+            {menu && <AiOutlineClose onClick={() => togglemenu()} />}
           </motion.div>
         </div>
 
         <div
           className={`  ${
             menu
-              ? "max-h-screen flex flex-col bg-[#050006] fixed z-[999] top-0 left-0 w-full overflow-hidden lg:hidden h-screen py-8 transition-[max-height] duration-500 ease-in-out "
-              : "max-h-[0px] overflow-hidden h-screen   transition-[max-height] duration-100 ease-in-out"
+              ? "max-h-[220px] overflow-hidden lg:hidden h-[220px] py-4 transition-[max-height] duration-500 ease-in-out "
+              : "max-h-[0px] overflow-hidden h-[200px]   transition-[max-height] duration-500 ease-in-out"
           }`}
         >
-          <div className="flex pr-3 justify-end">
-            <motion.div
-              initial={{
-                x: 500,
-                opacity: 0,
-                scale: 0.5,
-              }}
-              animate={{
-                x: 0,
-                opacity: 1,
-                scale: 1,
-              }}
-              transition={{
-                duration: 1.5,
-              }}
-              className="flex flex-row lg:hidden cursor-pointer text-[40px] font-[500]  text-gray-300 items-center"
-            >
-              {/* {!menu && <HiMenuAlt4 onClick={() => togglemenu()} />} */}
-              {menu && <AiOutlineClose onClick={() => togglemenu()} />}
-            </motion.div>
-          </div>
-          <div className="gap-8 mt-[70px] text-[20px] font-[500] leading-6 text-[#F6F6F6] flex-1 flex flex-col">
+          <div className="space-y-3 text-white">
             <a
               href="#footer"
               className="flex gap-1 items-center justify-center"
             >
-              <p>Whitepaper</p>
+              <p>Community</p>
             </a>
             <div className="flex gap-1 items-center justify-center">
               <a href="#roadmap">
-                <p>PAM NFT</p>
+                <p>Roadmap</p>
               </a>
             </div>
             <a href="#about" className="flex gap-1 items-center justify-center">
-              <p>Coin market cap</p>
+              <p>What is Pam?</p>
             </a>
-            <a href="#about" className="flex gap-1 items-center justify-center">
-              <p>Dexscrener</p>
-            </a>
-            <a href="#about" className="flex gap-1 items-center justify-center">
-              <p>Pancake swap</p>
-            </a>
+            <div className="flex items-center justify-center">
+              <a href="#buy">
+                <button className="bg-mygreen p-2 rounded-md text-white font-[500]">
+                  Buy Now
+                </button>
+              </a>
+            </div>
           </div>
           <div className="flex items-center justify-center mt-4">
             <div className="text-light text-[30px] flex gap-3">
               <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
-                <img src="/X Logo.svg" />
-              </Link>
-              <Link to="https://discord.gg/R7F8NDpdwT">
-                <img src="/Discord.svg" />
+                <BsTwitter />
               </Link>
               <Link to="https://t.me/PAMCOMUNITY">
-                <img src="/telegram.svg" />
+                <FaTelegramPlane />
               </Link>
+              <Link to="https://discord.gg/R7F8NDpdwT">
+                <BsDiscord />
+              </Link>
+              <a href={`mailto:${email}`}>
+                <GrMail />
+              </a>
             </div>
           </div>
         </div>
