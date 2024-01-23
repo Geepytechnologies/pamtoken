@@ -10,13 +10,13 @@ export interface Infts {
 const Nftcard = ({ title, subtitle, image, type }: Infts) => {
   const Getnfts = () => {
     return (
-      <div className="nftcard flex flex-col items-center justify-center min-w-[400px] h-[550px]">
+      <div className="nftcard flex flex-col items-center justify-center min-w-[300px] h-[400px]">
         {/* <img src="/PAM NFT.svg" className="w-[100px] h-auto" /> */}
-        <p className="text-[100px] font-popp stroketext leading-[190px] font-[700] text-center">
+        <p className="text-[80px] font-popp stroketext leading-[150px] font-[700] text-center">
           PAM NFTs
         </p>
 
-        <div className="border-[2px] border-[#196D0C] font-[400] text-[23px] rounded-[24px] px-[100px] py-2 text-[#F6F6F6]">
+        <div className="border-[2px] border-[#196D0C] font-[400] text-[23px] rounded-[24px] px-[60px] py-2 text-[#F6F6F6]">
           Get NFTs
         </div>
       </div>
@@ -27,8 +27,8 @@ const Nftcard = ({ title, subtitle, image, type }: Infts) => {
       {type == "getnft" ? (
         <Getnfts />
       ) : (
-        <div className="nftcard flex flex-col min-w-[400px] h-[550px]">
-          <img src={image} className="flex-1" />
+        <div className="nftcard flex flex-col min-w-[300px] h-[400px]">
+          <img src={image} className="h-[250px] w-full" />
           <div className="p-6">
             <p className="text-[#F6F6F6] text-[32px] font-[700]">
               {title.split(" ")[0]}{" "}
