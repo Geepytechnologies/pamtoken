@@ -3,9 +3,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Tokensupply from "../components/Tokensupply";
-import Roadmap from "../components/Roadmap";
-import Howtobuy from "../components/Howtobuy";
-import About from "../components/About";
 
 type Props = {};
 
