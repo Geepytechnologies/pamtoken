@@ -52,19 +52,44 @@ const Header = (props: Props) => {
           </motion.div>
           <ul className="text-[#F6F6F6] hidden  lg:flex gap-9 text-[16px] items-center justify-center">
             <li>
-              <a href="#footer">Whitepaper</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Whitepaper
+              </a>
             </li>
             <li>
-              <a href="#roadmap">PAM NFT</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                PAM NFT
+              </a>
             </li>
             <li>
-              <a href="#about">Coin market cap</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Coin market cap
+              </a>
             </li>
             <li>
-              <a href="#about">Dexscrener</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Dexscrener
+              </a>
             </li>
             <li>
-              <a href="#about">Pancake swap</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Pancake swap
+              </a>
             </li>
           </ul>
 
@@ -119,23 +144,39 @@ const Header = (props: Props) => {
           </div>
           <div className="gap-8 mt-[70px] text-[20px] font-[500] leading-6 text-[#F6F6F6] flex-1 flex flex-col">
             <a
-              href="#footer"
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
               className="flex gap-1 items-center justify-center"
             >
               <p>Whitepaper</p>
             </a>
             <div className="flex gap-1 items-center justify-center">
-              <a href="#roadmap">
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
                 <p>PAM NFT</p>
               </a>
             </div>
-            <a href="#about" className="flex gap-1 items-center justify-center">
+            <a
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
+              className="flex gap-1 items-center justify-center"
+            >
               <p>Coin market cap</p>
             </a>
-            <a href="#about" className="flex gap-1 items-center justify-center">
+            <a
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
+              className="flex gap-1 items-center justify-center"
+            >
               <p>Dexscrener</p>
             </a>
-            <a href="#about" className="flex gap-1 items-center justify-center">
+            <a
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
+              className="flex gap-1 items-center justify-center"
+            >
               <p>Pancake swap</p>
             </a>
           </div>

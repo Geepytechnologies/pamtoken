@@ -56,7 +56,7 @@ const mynfts: Infts[] = [
 
 const Nfts = (props: Props) => {
   return (
-    <div className="flex nfts max-w-full overflow-hidden mb-[100px]  flex-row gap-8">
+    <div className="flex max-w-full pl-5 overflow-x-scroll mb-[100px]  flex-row gap-8">
       {mynfts.map((item, i) => (
         <Nftcard
           title={item.title}
