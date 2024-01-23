@@ -23,7 +23,11 @@ const Header = (props: Props) => {
   const email = "Pamtoken4@gmail.com";
   return (
     <>
-      <header className="flex flex-col  w-full  px-3 py-4">
+      <header className="flex flex-col   w-full  px-3 py-4">
+        <div className="relative h-full w-full">
+          <div className="w-[250px] h-[250px] blurdiv absolute top-0 "></div>
+        </div>
+
         <div className="flex justify-between ">
           <motion.div
             initial={{
@@ -39,10 +43,10 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            className="flex gap-2"
+            className="flex gap-2 z-[200]"
           >
             <img
-              className="w-[50px] h-[50px] rounded-full border-1 border-white"
+              className="w-[60px] h-[60px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
           </motion.div>
@@ -103,18 +107,18 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            className="flex flex-row lg:hidden cursor-pointer text-[30px] font-[500]  text-gray-300 items-center"
+            className="flex flex-row lg:hidden cursor-pointer text-[40px] font-[500]  text-gray-300 items-center"
           >
-            {!menu && <HiMenuAlt4 onClick={() => togglemenu()} />}
-            {menu && <AiOutlineClose onClick={() => togglemenu()} />}
+            {!menu && <HiOutlineMenu onClick={() => togglemenu()} />}
+            {/* {menu && <AiOutlineClose onClick={() => togglemenu()} />} */}
           </motion.div>
         </div>
 
         <div
           className={`  ${
             menu
-              ? "max-h-[220px] overflow-hidden lg:hidden h-[220px] py-4 transition-[max-height] duration-500 ease-in-out "
-              : "max-h-[0px] overflow-hidden h-[200px]   transition-[max-height] duration-500 ease-in-out"
+              ? "max-h-screen flex flex-col bg-[#050006] fixed z-[999] top-0 left-0 w-full overflow-hidden lg:hidden h-screen py-8 transition-[max-height] duration-500 ease-in-out "
+              : "max-h-[0px] overflow-hidden h-screen   transition-[max-height] duration-100 ease-in-out"
           }`}
         >
           <div className="flex pr-3 justify-end">
@@ -144,7 +148,7 @@ const Header = (props: Props) => {
               target="_blank"
               className="flex gap-1 items-center justify-center"
             >
-              <p>Community</p>
+              <p>Whitepaper</p>
             </a>
             <div className="flex gap-1 items-center justify-center">
               <a
@@ -179,17 +183,14 @@ const Header = (props: Props) => {
           <div className="flex items-center justify-center mt-4">
             <div className="text-light text-[30px] flex gap-3">
               <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
-                <BsTwitter />
-              </Link>
-              <Link to="https://t.me/PAMCOMUNITY">
-                <FaTelegramPlane />
+                <img src="/X Logo.svg" />
               </Link>
               <Link to="https://discord.gg/R7F8NDpdwT">
-                <BsDiscord />
+                <img src="/Discord.svg" />
               </Link>
-              <a href={`mailto:${email}`}>
-                <GrMail />
-              </a>
+              <Link to="https://t.me/PAMCOMUNITY">
+                <img src="/telegram.svg" />
+              </Link>
             </div>
           </div>
         </div>
