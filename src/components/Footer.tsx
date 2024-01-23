@@ -39,7 +39,11 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        <p className="font-[500] text-white pl-8 pt-8">Email: {email}</p>
+        <div>
+          <p className="font-[500] text-white text-center pl-8 pt-8">
+            Email: {email}
+          </p>
+        </div>
         {/* contract address */}
         <div className="w-full my-[80px] flex items-center justify-center">
           <div className="border w-[95%] md:w-[70%] py-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
