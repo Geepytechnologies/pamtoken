@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Tokensupply from "../components/Tokensupply";
+import Nfts from "../components/Nfts";
 
 type Props = {};
 
@@ -11,8 +12,7 @@ const Home = (props: Props) => {
     <div className="font-mont bg-[#050006] min-h-screen">
       <Header />
       <Hero />
-
-      <section id="footer"></section>
+      <Nfts />
       <Footer />
     </div>
   );
