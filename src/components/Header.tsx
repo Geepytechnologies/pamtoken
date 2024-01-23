@@ -8,6 +8,7 @@ import {
   FaTelegramPlane,
   GrMail,
   HiMenuAlt4,
+  HiOutlineMenu,
 } from "react-icons/all";
 
 import { Link } from "react-router-dom";
@@ -47,19 +48,44 @@ const Header = (props: Props) => {
           </motion.div>
           <ul className="text-[#F6F6F6] hidden  lg:flex gap-9 text-[16px] items-center justify-center">
             <li>
-              <a href="#footer">Whitepaper</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Whitepaper
+              </a>
             </li>
             <li>
-              <a href="#roadmap">PAM NFT</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                PAM NFT
+              </a>
             </li>
             <li>
-              <a href="#about">Coin market cap</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Coin market cap
+              </a>
             </li>
             <li>
-              <a href="#about">Dexscrener</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Dexscrener
+              </a>
             </li>
             <li>
-              <a href="#about">Pancake swap</a>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                Pancake swap
+              </a>
             </li>
           </ul>
 
@@ -91,28 +117,64 @@ const Header = (props: Props) => {
               : "max-h-[0px] overflow-hidden h-[200px]   transition-[max-height] duration-500 ease-in-out"
           }`}
         >
-          <div className="space-y-3 text-white">
+          <div className="flex pr-3 justify-end">
+            <motion.div
+              initial={{
+                x: 500,
+                opacity: 0,
+                scale: 0.5,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              className="flex flex-row lg:hidden cursor-pointer text-[40px] font-[500]  text-gray-300 items-center"
+            >
+              {/* {!menu && <HiMenuAlt4 onClick={() => togglemenu()} />} */}
+              {menu && <AiOutlineClose onClick={() => togglemenu()} />}
+            </motion.div>
+          </div>
+          <div className="gap-8 mt-[70px] text-[20px] font-[500] leading-6 text-[#F6F6F6] flex-1 flex flex-col">
             <a
-              href="#footer"
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
               className="flex gap-1 items-center justify-center"
             >
               <p>Community</p>
             </a>
             <div className="flex gap-1 items-center justify-center">
-              <a href="#roadmap">
-                <p>Roadmap</p>
+              <a
+                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                target="_blank"
+              >
+                <p>PAM NFT</p>
               </a>
             </div>
-            <a href="#about" className="flex gap-1 items-center justify-center">
-              <p>What is Pam?</p>
+            <a
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
+              className="flex gap-1 items-center justify-center"
+            >
+              <p>Coin market cap</p>
             </a>
-            <div className="flex items-center justify-center">
-              <a href="#buy">
-                <button className="bg-mygreen p-2 rounded-md text-white font-[500]">
-                  Buy Now
-                </button>
-              </a>
-            </div>
+            <a
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
+              className="flex gap-1 items-center justify-center"
+            >
+              <p>Dexscrener</p>
+            </a>
+            <a
+              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              target="_blank"
+              className="flex gap-1 items-center justify-center"
+            >
+              <p>Pancake swap</p>
+            </a>
           </div>
           <div className="flex items-center justify-center mt-4">
             <div className="text-light text-[30px] flex gap-3">
