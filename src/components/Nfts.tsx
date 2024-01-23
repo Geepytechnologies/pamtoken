@@ -5,49 +5,49 @@ type Props = {};
 
 const mynfts: Infts[] = [
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "",
     type: "getnft",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "/pam2.png",
     type: "",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "/pam4.png",
     type: "",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "/pam5.png",
     type: "",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "",
     type: "getnft",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "/pam2.png",
     type: "",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "/pam4.png",
     type: "",
   },
   {
-    title: "Pam Nft",
+    title: "Pam NFT",
     subtitle: "lorem",
     image: "/pam5.png",
     type: "",
@@ -56,9 +56,10 @@ const mynfts: Infts[] = [
 
 const Nfts = (props: Props) => {
   return (
-    <div className="flex max-w-full pl-5 overflow-x-scroll mb-[100px]  flex-row gap-8">
+    <div className="flex nfts max-w-full overflow-hidden pl-5 mb-[100px]  flex-row gap-8">
       {mynfts.map((item, i) => (
         <Nftcard
+          key={i}
           title={item.title}
           subtitle={item.subtitle}
           image={item.image}

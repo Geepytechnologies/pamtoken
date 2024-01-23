@@ -8,6 +8,16 @@ type Props = {};
 const Footer = (props: Props) => {
   const year = new Date().getFullYear();
   const email = "Pamtoken4@gmail.com";
+
+  const copyToClipboard = async () => {
+    const address = "0xB83b945C80c37A1f704bc28ADaA026052B7982FF";
+    try {
+      await navigator.clipboard.writeText(address);
+      console.log("Text copied to clipboard");
+    } catch (err) {
+      console.error("Unable to copy text to clipboard", err);
+    }
+  };
   return (
     <div className="flex flex-col">
       <div className="flex flex-col">
@@ -46,7 +56,7 @@ const Footer = (props: Props) => {
         </div>
         {/* contract address */}
         <div className="w-full my-[80px] flex items-center justify-center">
-          <div className="border w-[95%] md:w-[70%] lg:w-[80%] py-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
+          <div className="border w-[95%] md:w-[70%] lg:w-[90%] py-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
             <div className="gap-2 hidden md:flex items-center">
               <p className="text-[#22E406] text-[17px] md:text-[36px] font-[600]">
                 Copy contract phrase
@@ -56,7 +66,10 @@ const Footer = (props: Props) => {
             <p className="text-[#F6F6F6] text-[17px] md:text-[36px]">
               0xB83b945C.....
             </p>
-            <div className="rounded-[16px] text-[17px] md:text-[36px] border flex items-center gap-3 border-[#22E406] text-[#F6F6F6] px-6 py-2">
+            <div
+              onClick={copyToClipboard}
+              className="rounded-[16px] cursor-pointer text-[17px] md:text-[36px] border flex items-center gap-3 border-[#22E406] text-[#F6F6F6] px-6 py-2"
+            >
               <span>Copy</span>
               <IoCopyOutline className="text-[40px]" />
             </div>

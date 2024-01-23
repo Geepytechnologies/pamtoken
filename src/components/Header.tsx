@@ -69,7 +69,7 @@ const Header = (props: Props) => {
             </li>
             <li>
               <a
-                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                href="https://coinmarketcap.com/currencies/pam/"
                 target="_blank"
               >
                 Coin market cap
@@ -77,7 +77,7 @@ const Header = (props: Props) => {
             </li>
             <li>
               <a
-                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                href="https://www.dextools.io/app/en/bnb/pair-explorer/0x368ca7005cf797526fe13aea89a59906b639bdca"
                 target="_blank"
               >
                 Dexscrener
@@ -85,7 +85,7 @@ const Header = (props: Props) => {
             </li>
             <li>
               <a
-                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+                href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0xB83b945C80c37A1f704bc28ADaA026052B7982FF"
                 target="_blank"
               >
                 Pancake swap
@@ -159,21 +159,21 @@ const Header = (props: Props) => {
               </a>
             </div>
             <a
-              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              href="https://coinmarketcap.com/currencies/pam/"
               target="_blank"
               className="flex gap-1 items-center justify-center"
             >
               <p>Coin market cap</p>
             </a>
             <a
-              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              href="https://www.dextools.io/app/en/bnb/pair-explorer/0x368ca7005cf797526fe13aea89a59906b639bdca"
               target="_blank"
               className="flex gap-1 items-center justify-center"
             >
               <p>Dexscrener</p>
             </a>
             <a
-              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
+              href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0xB83b945C80c37A1f704bc28ADaA026052B7982FF"
               target="_blank"
               className="flex gap-1 items-center justify-center"
             >

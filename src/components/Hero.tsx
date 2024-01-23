@@ -5,7 +5,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className=" w-full h-[500px] mt-[160px] relative">
+    <div className=" w-full h-[500px] mb-[50px] mt-[90px] relative">
       <div className="w-[348px] h-[348px] blurdiv absolute top-0 "></div>
       <div className="absolute top-0">
         <div className="flex flex-col w-full gap-[64px] p-6  items-center justify-center">
