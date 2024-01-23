@@ -12,7 +12,7 @@ const Nftcard = ({ title, subtitle, image, type }: Infts) => {
     return (
       <div className="nftcard flex flex-col items-center justify-center min-w-[400px] h-[550px]">
         {/* <img src="/PAM NFT.svg" className="w-[100px] h-auto" /> */}
-        <p className="text-[100px] stroketext font-[700] text-center">
+        <p className="text-[100px] font-popp stroketext leading-[190px] font-[700] text-center">
           PAM NFTs
         </p>
 

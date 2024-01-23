@@ -118,7 +118,7 @@ const Header = (props: Props) => {
           className={`  ${
             menu
               ? "max-h-screen flex flex-col bg-[#050006] fixed z-[999] top-0 left-0 w-full overflow-hidden lg:hidden h-screen py-8 transition-[max-height] duration-500 ease-in-out "
-              : "max-h-[0px] overflow-hidden h-screen   transition-[max-height] duration-100 ease-in-out"
+              : "max-h-[0px] overflow-hidden h-screen bg-[#050006]  transition-[max-height] duration-100 ease-in-out"
           }`}
         >
           <div className="flex pr-3 justify-end">

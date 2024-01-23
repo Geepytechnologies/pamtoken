@@ -1,5 +1,31 @@
-body {
+@font-face {
+  font-family: arco;
+  src: url("/fonts/ARCO.ttf");
+  src: url("/fonts/ARCO2.otf");
+}
+@font-face {
   font-family: matter;
+  src: url("/fonts/matter-font/Matter-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: matter;
+  src: url("/fonts/matter-font/Matter-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  /* font-family: matter; */
 }
 
 .glass {
@@ -43,30 +69,4 @@ body {
   to {
     transform: translateX(-100%);
   }
-}
-
-@font-face {
-  font-family: arco;
-  src: url("/fonts/ARCO.ttf");
-  src: url("/fonts/ARCO2.otf");
-}
-@font-face {
-  font-family: matter;
-  src: url("/fonts/matter-font/Matter-Regular.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: matter;
-  src: url("/fonts/matter-font/Matter-Medium.ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: matter;
-  src: url("/fonts/matter-font/Matter-SemiBold.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: matter;
-  src: url("/fonts/matter-font/Matter-Bold.ttf");
-  font-weight: bold;
 }

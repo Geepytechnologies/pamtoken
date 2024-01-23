@@ -46,7 +46,7 @@ const Footer = (props: Props) => {
         </div>
         {/* contract address */}
         <div className="w-full my-[80px] flex items-center justify-center">
-          <div className="border w-[95%] md:w-[70%] py-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
+          <div className="border w-[95%] md:w-[70%] lg:w-[80%] py-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
             <div className="gap-2 hidden md:flex items-center">
               <p className="text-[#22E406] text-[17px] md:text-[36px] font-[600]">
                 Copy contract phrase
