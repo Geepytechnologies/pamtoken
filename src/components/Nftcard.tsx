@@ -29,7 +29,7 @@ const Nftcard = ({ title, subtitle, image, type }: Infts) => {
       ) : (
         <div className="nftcard nfts-slide flex flex-col min-w-[300px] h-[400px]">
           <img src={image} className="h-[250px] w-full" />
-          <div className="p-6 flex flex-col gap-4">
+          <div className="p-6 flex flex-col gap-4  ">
             <p className="text-[#F6F6F6] text-[32px] font-[700]">
               {title.split(" ")[0]}{" "}
               <span className="text-[21px]">{title.split(" ")[1]}</span>
@@ -37,9 +37,9 @@ const Nftcard = ({ title, subtitle, image, type }: Infts) => {
             <p className="text-[#D2D2D2] text-[17px] leading-[25px]">
               {subtitle}
             </p>
-            <div className="h-[2px] w-full bg-white">
+            {/* <div className="h-[2px] w-full bg-white">
               <div className="bg-[#22E406] h-full w-[50%]"></div>
-            </div>
+            </div> */}
           </div>
         </div>
       )}

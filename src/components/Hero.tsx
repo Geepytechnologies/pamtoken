@@ -5,9 +5,9 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className=" w-full h-[500px] mb-[50px] mt-[90px] relative">
+    <div className=" w-full h-[500px] mb-[50px] relative">
       <div className="w-[348px] h-[348px] blurdiv absolute top-0 "></div>
-      <div className="absolute top-0">
+      <div className="w-full h-full flex flex-col justify-center absolute top-0 ">
         <div className="flex flex-col w-full gap-[64px] p-6  items-center justify-center">
           <div className="flex flex-col gap-[16px]">
             <p className="text-[#F6F6F6] text-center font-[700] leading-[100%] text-[40px] md:text-[80px]">

@@ -5,50 +5,50 @@ type Props = {};
 
 const mynfts: Infts[] = [
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "",
     type: "getnft",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "/pam2.png",
     type: "",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "/pam4.png",
     type: "",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "/pam5.png",
     type: "",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "",
     type: "getnft",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "/pam2.png",
     type: "",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "/pam4.png",
     type: "",
   },
   {
-    title: "Pam NFT",
-    subtitle: "lorem",
+    title: "PAM NFT",
+    subtitle: "Diamond Hand",
     image: "/pam5.png",
     type: "",
   },
@@ -56,7 +56,7 @@ const mynfts: Infts[] = [
 
 const Nfts = (props: Props) => {
   return (
-    <div className="flex nfts max-w-full overflow-hidden pl-5 mb-[100px]  flex-row gap-8">
+    <div className="flex nfts max-w-full overflow-hidden pl-5 my-[100px]  flex-row gap-8">
       {mynfts.map((item, i) => (
         <Nftcard
           key={i}

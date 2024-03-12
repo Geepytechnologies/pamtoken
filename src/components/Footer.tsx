@@ -19,60 +19,60 @@ const Footer = (props: Props) => {
     }
   };
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-col">
+    <div className="flex flex-col ">
+      <div className=""></div>
+      <div className="flex flex-col md:flex-row mt-4 ">
         {/* logo */}
-        <div className="flex flex-col mb-[70px]">
+        <div className="flex items-center mb-[70px] ">
           <div className="flex gap-2 p-2 items-center justify-center">
             <img
-              className="w-[50px] h-[50px] rounded-full border-1 border-white"
+              className="w-[40px] h-[40px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
           </div>
-          <p className="text-[#F6F6F6] text-center text-[32px] font-[700] ">
-            PAM Token
+          <p className="text-white text-center text-[32px] font-[700] ">
+            PAM TOKEN
           </p>
         </div>
-        {/* socials */}
-        <div className="my-2 items-center justify-center flex  flex-col">
-          <div className="flex items-center justify-center mt-2">
-            <div className="text-light text-[30px] flex gap-3">
-              <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
-                <img src="/X Logo.svg" />
-              </Link>
-              <Link to="https://discord.gg/R7F8NDpdwT">
-                <img src="/Discord.svg" />
-              </Link>
-              <Link to="https://t.me/PAMCOMUNITY">
-                <img src="/telegram.svg" />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div>
+
+        {/* <div>
           <p className="font-[500] text-white text-center pl-8 pt-8">
             Email: {email}
           </p>
-        </div>
-        {/* contract address */}
-        <div className="w-full my-[80px] flex items-center justify-center">
-          <div className="border w-[95%] md:w-[70%] lg:w-[90%] py-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
-            <div className="gap-2 hidden md:flex items-center">
-              <p className="text-[#22E406] text-[17px] md:text-[36px] font-[600]">
-                Copy contract phrase
-              </p>
-              <div className="w-[3px] h-[38px] bg-[#F6F6F6]"></div>
-            </div>
-            <p className="text-[#F6F6F6] text-[17px] md:text-[36px]">
-              0xB83b945C.....
+        </div> */}
+      </div>
+      {/* contract address */}
+      <div className="w-full my-[80px] flex items-center justify-center">
+        <div className="border py-1 px-2 border-[#A7A5A5] flex flex-row items-center justify-center gap-8  rounded-[16px]">
+          <div className="gap-2 hidden md:flex items-center">
+            <p className="text-[#22E406] text-[17px] font-[600]">
+              Copy contract phrase
             </p>
-            <div
-              onClick={copyToClipboard}
-              className="rounded-[16px] cursor-pointer text-[17px] md:text-[36px] border flex items-center gap-3 border-[#22E406] text-[#F6F6F6] px-6 py-2"
-            >
-              <span>Copy</span>
-              <IoCopyOutline className="text-[40px]" />
-            </div>
+            <div className="w-[1px] h-[38px] bg-[#F6F6F6]"></div>
+          </div>
+          <p className="text-[#F6F6F6] text-[17px]">0xB83b945C.....</p>
+          <div
+            onClick={copyToClipboard}
+            className="rounded-[16px] cursor-pointer text-[17px] border-2 shadow-md flex items-center gap-3 bg-[#33244d] text-white px-2 py-1"
+          >
+            <span>Copy</span>
+            <IoCopyOutline className="text-[20px]" />
+          </div>
+        </div>
+      </div>
+      {/* socials */}
+      <div className="my-2 items-center justify-center flex  flex-col">
+        <div className="flex items-center justify-center mt-2">
+          <div className="text-light text-[30px] flex gap-3">
+            <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
+              <img src="/X Logo.svg" className="w-[40px] h-[40px]" />
+            </Link>
+            <Link to="https://discord.gg/R7F8NDpdwT">
+              <img src="/Discord.svg" className="w-[40px] h-[40px]" />
+            </Link>
+            <Link to="https://t.me/PAMCOMUNITY">
+              <img src="/telegram.svg" className="w-[40px] h-[40px]" />
+            </Link>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ const Header = (props: Props) => {
   const email = "Pamtoken4@gmail.com";
   return (
     <>
-      <header className="flex flex-col   w-full  px-3 py-4">
+      <header className="flex flex-col w-full px-3 py-4 h-[100px]">
         <div className="relative h-full w-full">
           <div className="w-[250px] h-[250px] blurdiv absolute top-0 "></div>
         </div>
@@ -43,12 +43,13 @@ const Header = (props: Props) => {
             transition={{
               duration: 1.5,
             }}
-            className="flex gap-2 z-[200]"
+            className="flex items-center gap-2 z-[200]"
           >
             <img
-              className="w-[60px] h-[60px] rounded-full border-1 border-white"
+              className="w-[40px] h-[40px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
+            <p className="text-white font-[600] text-[25px]">PAM TOKEN</p>
           </motion.div>
           <ul className="text-[#F6F6F6] hidden  lg:flex gap-9 text-[16px] items-center justify-center">
             <li>
@@ -115,7 +116,7 @@ const Header = (props: Props) => {
         </div>
 
         <div
-          className={`z-[999] flex flex-col py-8 lg:hidden h-screen bg-[#050006] fixed top-0 left-0 w-full  ${
+          className={`z-[999] flex flex-col py-8 lg:hidden h-screen bg-[#33244d] fixed top-0 left-0 w-full  ${
             menu
               ? "max-h-screen ease-in-out duration-500 overflow-hidden transition "
               : "hidden"
