@@ -6,6 +6,8 @@ const About = (props: Props) => {
   return (
     <div className="flex flex-col md:flex-row font-mont relative">
       <div className="w-[348px] h-[348px] blurdiv absolute top-0 right-0 "></div>
+      <div className="w-[348px] h-[348px] blurdiv2 absolute top-0 right-0"></div>
+      {/* <div className="w-[348px] h-[348px] blurdiv absolute top-0 right-0 "></div> */}
 
       {/* <div className="absolute -top-[3px] h-1 blur-lg  w-full bg-[black]"></div> */}
       <div className="text-white p-2 md:flex md:flex-col md:justify-center ">

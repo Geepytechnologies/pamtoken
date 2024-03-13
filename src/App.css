@@ -25,6 +25,7 @@
 }
 
 body {
+  /* background-color: white; */
   /* font-family: matter; */
 }
 
@@ -44,6 +45,11 @@ body {
 .blurdiv {
   border-radius: 348px;
   background: #d40ba2;
+  filter: blur(250px);
+}
+.blurdiv2 {
+  border-radius: 348px;
+  background: #2a2c4a;
   filter: blur(250px);
 }
 .nftcard {

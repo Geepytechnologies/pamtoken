@@ -24,9 +24,9 @@ const Header = (props: Props) => {
   return (
     <>
       <header className="flex flex-col w-full px-3 py-4 h-[100px]">
-        <div className="relative h-full w-full">
+        {/* <div className="relative h-full w-full">
           <div className="w-[250px] h-[250px] blurdiv absolute top-0 "></div>
-        </div>
+        </div> */}
 
         <div className="flex justify-between ">
           <motion.div
