@@ -5,6 +5,8 @@ import Hero from "../components/Hero";
 import Tokensupply from "../components/Tokensupply";
 import Nfts from "../components/Nfts";
 import About from "../components/About";
+import Minting from "../components/Minting";
+import Note from "../components/Note";
 
 type Props = {};
 
@@ -21,6 +23,8 @@ const Home = (props: Props) => {
       <div className="  flex flex-1 flex-col relative">
         <About />
         <Nfts />
+        <Minting />
+        <Note />
         <Footer />
       </div>
     </div>

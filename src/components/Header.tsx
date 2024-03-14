@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import {
@@ -20,10 +20,24 @@ const Header = (props: Props) => {
   const togglemenu = () => {
     setMenu(!menu);
   };
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const sidebar = useRef<HTMLDivElement>(null);
+  const sidebarbackground = useRef<HTMLDivElement>(null);
+
+  const open = () => {
+    if (sidebar.current) {
+      sidebar.current.style.width = "100%";
+    }
+  };
+  const close = () => {
+    if (sidebar.current) {
+      sidebar.current.style.width = "0px";
+    }
+  };
   const email = "Pamtoken4@gmail.com";
   return (
     <>
-      <header className="flex flex-col w-full px-3 py-4 h-[100px]">
+      <header className="flex flex-col justify-center w-full px-3 py-4 h-[100px]">
         {/* <div className="relative h-full w-full">
           <div className="w-[250px] h-[250px] blurdiv absolute top-0 "></div>
         </div> */}
@@ -49,9 +63,9 @@ const Header = (props: Props) => {
               className="w-[40px] h-[40px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
-            <p className="text-white font-[600] text-[25px]">PAM TOKEN</p>
+            <p className="text-white font-[600] text-[25px]">PAM</p>
           </motion.div>
-          <ul className="text-[#F6F6F6] hidden  lg:flex gap-9 text-[16px] items-center justify-center">
+          <ul className="text-[#F6F6F6] hidden headerlinks  lg:flex gap-9 text-[16px] items-center justify-center">
             <li>
               <a
                 href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
@@ -110,19 +124,16 @@ const Header = (props: Props) => {
             }}
             className="flex flex-row lg:hidden cursor-pointer text-[40px] font-[500]  text-gray-300 items-center"
           >
-            {!menu && <HiOutlineMenu onClick={() => togglemenu()} />}
-            {/* {menu && <AiOutlineClose onClick={() => togglemenu()} />} */}
+            <HiOutlineMenu onClick={open} />
           </motion.div>
         </div>
 
+        {/* sidebar */}
         <div
-          className={`z-[999] flex flex-col py-8 lg:hidden h-screen bg-[#33244d] fixed top-0 left-0 w-full  ${
-            menu
-              ? "max-h-screen ease-in-out duration-500 overflow-hidden transition "
-              : "hidden"
-          }`}
+          ref={sidebar}
+          className={`z-[999] flex flex-col h-screen  bg-[#2f0226] sidebar   `}
         >
-          <div className="flex pr-3 justify-end">
+          <div className="flex h-[90px] pr-3 justify-end">
             <motion.div
               initial={{
                 x: 500,
@@ -139,9 +150,15 @@ const Header = (props: Props) => {
               }}
               className="flex flex-row lg:hidden cursor-pointer text-[40px] font-[500]  text-gray-300 items-center"
             >
-              {/* {!menu && <HiMenuAlt4 onClick={() => togglemenu()} />} */}
-              {menu && <AiOutlineClose onClick={() => togglemenu()} />}
+              <AiOutlineClose onClick={close} />
             </motion.div>
+          </div>
+          <div className="flex gap-2 items-center self-center">
+            <img
+              className="w-[40px] h-[40px] rounded-full border-1 border-white"
+              src="/image0.jpeg"
+            />
+            <p className="text-white font-[600] text-[25px]">PAM</p>
           </div>
           <div className="gap-8 mt-[70px] text-[20px] font-[500] leading-6 text-[#F6F6F6] flex-1 flex flex-col">
             <a
@@ -181,7 +198,8 @@ const Header = (props: Props) => {
               <p>Pancake swap</p>
             </a>
           </div>
-          <div className="flex items-center justify-center mt-4">
+          {/* socials */}
+          {/* <div className="flex items-center justify-center mt-4">
             <div className="text-light text-[30px] flex gap-3">
               <Link to="https://x.com/Pamtoken_?t=sWu8NGS-9vmt8Jn9zMYbbQ&s=09">
                 <img src="/X Logo.svg" />
@@ -193,7 +211,7 @@ const Header = (props: Props) => {
                 <img src="/telegram.svg" />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
     </>
