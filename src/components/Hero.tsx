@@ -6,7 +6,7 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <div className=" w-full h-[600px] md:h-[650px] mb-[150px] relative">
-      <div className="w-[348px] h-[348px] blurdiv absolute top-0 "></div>
+      <div className="w-[150px] h-[150px] md:w-[348px] md:h-[348px] blurdiv absolute top-0 "></div>
       <div className="w-full h-full flex flex-row justify-center absolute top-0 ">
         <img
           src="/pamregen.png"
@@ -52,11 +52,11 @@ const Hero = (props: Props) => {
           <div className=" mt-3 w-[90%] md:w-[70%] lg:w-[60%] flex justify-between">
             <img
               src="/pamregen.png"
-              className="animate-pulse w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
+              className="animate-pulse w-[100px] h-[100px] md:w-[100px] md:h-[100px]"
             />
             <img
               src="/pamregen.png"
-              className="animate-pulse w-[70px] h-[70px] md:w-[100px] md:h-[100px] "
+              className="animate-pulse w-[100px] h-[100px] md:w-[100px] md:h-[100px] "
             />
           </div>
         </div>

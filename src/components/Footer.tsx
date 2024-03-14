@@ -13,7 +13,7 @@ const Footer = (props: Props) => {
     const address = "0xB83b945C80c37A1f704bc28ADaA026052B7982FF";
     try {
       await navigator.clipboard.writeText(address);
-      console.log("Text copied to clipboard");
+      alert("Address copied to clipboard");
     } catch (err) {
       console.error("Unable to copy text to clipboard", err);
     }
