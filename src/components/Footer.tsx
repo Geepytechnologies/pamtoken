@@ -23,17 +23,17 @@ const Footer = (props: Props) => {
       <div className="">
         <div className="flex flex-col mt-4 ">
           {/* logo */}
-          <div className="flex items-center justify-center ">
+          <Link to="/" className="flex items-center justify-center ">
             <div className="flex gap-2 p-2 items-center justify-center">
               <img
                 className="w-[40px] h-[40px] rounded-full border-1 border-white"
                 src="/image0.jpeg"
               />
             </div>
-            <p className="text-white text-center text-[32px] font-[700] ">
+            <p className="text-white text-center font-arco text-[32px] font-[700] ">
               PAM
             </p>
-          </div>
+          </Link>
 
           <div>
             <p className="font-[500] text-white text-center pl-8 pt-8">

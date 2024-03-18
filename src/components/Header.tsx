@@ -37,42 +37,39 @@ const Header = (props: Props) => {
   const email = "Pamtoken4@gmail.com";
   return (
     <>
-      <header className="flex flex-col justify-center w-full px-3 py-4 h-[100px]">
+      <header className="bg-[#050006] flex flex-col justify-center w-full px-3 py-4 h-[100px]">
         {/* <div className="relative h-full w-full">
           <div className="w-[250px] h-[250px] blurdiv absolute top-0 "></div>
         </div> */}
 
         <div className="flex justify-between ">
-          <motion.div
-            initial={{
-              x: -500,
-              opacity: 0,
-              scale: 0.5,
-            }}
-            animate={{
-              x: 0,
-              opacity: 1,
-              scale: 1,
-            }}
-            transition={{
-              duration: 1.5,
-            }}
-            className="flex items-center gap-2 z-[200]"
-          >
-            <img
-              className="w-[40px] h-[40px] rounded-full border-1 border-white"
-              src="/image0.jpeg"
-            />
-            <p className="text-white font-[600] text-[25px]">PAM</p>
-          </motion.div>
+          <Link to="/" className="z-[200]">
+            <motion.div
+              initial={{
+                x: -500,
+                opacity: 0,
+                scale: 0.5,
+              }}
+              animate={{
+                x: 0,
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: 1.5,
+              }}
+              className="flex items-center gap-2 "
+            >
+              <img
+                className="w-[40px] h-[40px] rounded-full border-1 border-white"
+                src="/image0.jpeg"
+              />
+              <p className="text-white font-arco font-[600] text-[25px]">PAM</p>
+            </motion.div>
+          </Link>
           <ul className="text-[#F6F6F6] hidden headerlinks  lg:flex gap-9 text-[16px] items-center justify-center">
             <li>
-              <a
-                href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
-                target="_blank"
-              >
-                Whitepaper
-              </a>
+              <Link to="/whitepaper">Whitepaper</Link>
             </li>
             <li>
               <a
@@ -158,16 +155,15 @@ const Header = (props: Props) => {
               className="w-[40px] h-[40px] rounded-full border-1 border-white"
               src="/image0.jpeg"
             />
-            <p className="text-white font-[600] text-[25px]">PAM</p>
+            <p className="text-white font-arco font-[600] text-[25px]">PAM</p>
           </div>
           <div className="gap-8 mt-[70px] text-[20px] font-[500] leading-6 text-[#F6F6F6] flex-1 flex flex-col">
-            <a
-              href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
-              target="_blank"
+            <Link
+              to="/whitepaper"
               className="flex gap-1 items-center justify-center"
             >
               <p>Whitepaper</p>
-            </a>
+            </Link>
             <div className="flex gap-1 items-center justify-center">
               <a
                 href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"

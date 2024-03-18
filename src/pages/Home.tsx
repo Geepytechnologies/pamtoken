@@ -12,7 +12,7 @@ type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className="font-mont bg-[#050006] min-h-screen">
+    <div className=" bg-[#050006] min-h-screen">
       <div className="relative h-[600px] w-full">
         <div className="w-full h-full bg-[url('/aitech2.png')] bg-cover bg-center absolute top-0 opacity-[0.25] "></div>
         <div className="w-full h-full absolute top-0">
@@ -25,6 +25,7 @@ const Home = (props: Props) => {
         <Nfts />
         <Minting />
         <Note />
+        <Tokensupply />
         <Footer />
       </div>
     </div>

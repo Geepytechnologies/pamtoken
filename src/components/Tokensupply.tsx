@@ -21,7 +21,7 @@ const Tokensupply = (props: Props) => {
     }
   }, [controls, inView]);
   return (
-    <div>
+    <div className="mb-9">
       <p className="font-[600] text-center py-4 font-arco text-mygreen tracking-widest text-[30px]">
         Tokenomics
       </p>
@@ -38,42 +38,30 @@ const Tokensupply = (props: Props) => {
           transition={{
             duration: 1.2,
           }}
-          src="/supply.svg"
+          src="/supply2.svg"
           className="w-[80%] md:w-[60%] lg:w-[40%]"
         />
         {/* Token distribution */}
-        <div className="py-2 flex gap-3 flex-col font-[500]">
+        <div className="py-2 flex gap-3 flex-col font-[500] text-white">
           <div className="flex gap-2 items-center pl-3">
-            <div className="bg-[#582E2F] h-5 w-6"></div>
+            <div className="bg-[#300227] h-5 w-6"></div>
             <span>-</span>
-            <p className="text-black">
-              73.92 Trillion Pam tokens for PinkSale FairLaunch and liquidity
-              provision on PancakeSwap exchange
-            </p>
+            <p className="text-white">FairLaunch/Liquidity</p>
           </div>
           <div className="flex gap-2 items-center pl-3">
-            <div className="bg-[#6B972B] h-5 w-6"></div>
+            <div className="bg-[#196D0C] h-5 w-6"></div>
             <span>-</span>
-            <p>
-              17 Trillion Pam tokens reserved for centralised exchange (CEX)
-              listings and liquidity.
-            </p>
+            <p>Cex Listing.</p>
           </div>
           <div className="flex gap-2 items-center pl-3">
             <div className="bg-[#9F9C5D] h-5 w-6"></div>
             <span>-</span>
-            <p>
-              5 Trillion Pam tokens for the development team and project
-              funding.
-            </p>
+            <p>Marketing.</p>
           </div>
           <div className="flex gap-2 items-center pl-3">
-            <div className="bg-[#9F9C5D] h-5 w-6"></div>
+            <div className="bg-[#576827] h-5 w-6"></div>
             <span>-</span>
-            <p>
-              4.08 Trillion Pam tokens for marketing, airdrops, promotions and
-              Partnerships.
-            </p>
+            <p>Airdrop.</p>
           </div>
         </div>
       </div>
@@ -83,7 +71,7 @@ const Tokensupply = (props: Props) => {
         <p>Farming, Cex Listing and Moon...</p>
       </div> */}
       {/* other supplies */}
-      <div className="p-2 pb-[30px] text-[14px] flex flex-col gap-3 font-[500]">
+      {/* <div className="p-2 pb-[30px] text-[14px] flex flex-col gap-3 font-[500]">
         <div>
           <p>
             <span className="font-[600] font-arco text-mygreen tracking-wide">
@@ -111,7 +99,7 @@ const Tokensupply = (props: Props) => {
             distribution and prevent potential price manipulation.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

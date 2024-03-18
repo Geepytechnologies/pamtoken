@@ -27,10 +27,10 @@ const Hero = (props: Props) => {
                 className="hidden animate-pulse md:flex w-[70px] h-[70px] md:w-[100px] md:h-[100px]"
               />
               <p
-                className="text-[#F6F6F6] text-lg sm:text-xl md:text-2xl font-[600] text-center 
+                className="text-[#F6F6F6] text-lg sm:text-xl md:text-2xl text-center 
                w-full md:w-[70%] "
               >
-                <span className="font-[400] text-[#D2D2D2]">PAM</span>, the
+                <span className="font-[600] text-[#D2D2D2]">PAM</span>, the
                 ultimate meme token for diamond hands! Powered by cutting-edge
                 AI tech, PAM isn&apos;t just a token, it&apos;s a platform for
                 groundbreaking experiments in the ever-evolving crypto space!
@@ -45,9 +45,9 @@ const Hero = (props: Props) => {
             <div className="rounded-[24px] border-[2px] border-[#196D0C] px-9 py-2 text-[#F6F6F6] text-center">
               Get PAM
             </div>
-            <div className="rounded-[24px] border-[2px] border-[#196D0C] px-9 py-2 text-[#F6F6F6] text-center">
+            {/* <div className="rounded-[24px] border-[2px] border-[#196D0C] px-9 py-2 text-[#F6F6F6] text-center">
               Get PAM NFT
-            </div>
+            </div> */}
           </div>
           <div className=" mt-3 w-[90%] md:w-[70%] lg:w-[60%] flex justify-between">
             <img

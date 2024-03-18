@@ -23,6 +23,7 @@ module.exports = {
       open: ["Open Sans", "sans-serif"],
       inter: ["Inter", "sans-serif"],
       arco: ["arco", "sans-serif"],
+      matter: ["matter", "sans-serif"],
     },
   },
   plugins: [],
