@@ -84,7 +84,7 @@ const Header = (props: Props) => {
                 href="https://coinmarketcap.com/currencies/pam/"
                 target="_blank"
               >
-                Coin market cap
+                Coinmarket Cap
               </a>
             </li>
             <li>
@@ -100,7 +100,7 @@ const Header = (props: Props) => {
                 href="https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0xB83b945C80c37A1f704bc28ADaA026052B7982FF"
                 target="_blank"
               >
-                Pancake swap
+                PancakeSwap
               </a>
             </li>
           </ul>
@@ -177,7 +177,7 @@ const Header = (props: Props) => {
               target="_blank"
               className="flex gap-1 items-center justify-center"
             >
-              <p>Coin market cap</p>
+              <p>Coinmarket cap</p>
             </a>
             <a
               href="https://www.dextools.io/app/en/bnb/pair-explorer/0x368ca7005cf797526fe13aea89a59906b639bdca"
@@ -191,7 +191,7 @@ const Header = (props: Props) => {
               target="_blank"
               className="flex gap-1 items-center justify-center"
             >
-              <p>Pancake swap</p>
+              <p>PancakeSwap</p>
             </a>
           </div>
           {/* socials */}
