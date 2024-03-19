@@ -38,7 +38,7 @@ const Tokensupply = (props: Props) => {
           transition={{
             duration: 1.2,
           }}
-          src="/supply2.svg"
+          src="/supply.png"
           className="w-[80%] md:w-[60%] lg:w-[40%]"
         />
         {/* Token distribution */}

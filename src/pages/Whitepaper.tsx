@@ -63,7 +63,7 @@ const Whitepaper = (props: Props) => {
               </h2>
               <h2>
                 <span className="">- Airdrop: </span>
-                2.8% (2.8 Trillion Pam)
+                2.08% (2.08 Trillion Pam)
               </h2>
             </p>
             <p>
