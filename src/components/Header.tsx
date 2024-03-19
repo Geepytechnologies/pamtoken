@@ -71,14 +71,14 @@ const Header = (props: Props) => {
             <li>
               <Link to="/whitepaper">Whitepaper</Link>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
                 target="_blank"
               >
                 PAM NFT
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://coinmarketcap.com/currencies/pam/"
@@ -164,14 +164,14 @@ const Header = (props: Props) => {
             >
               <p>Whitepaper</p>
             </Link>
-            <div className="flex gap-1 items-center justify-center">
+            {/* <div className="flex gap-1 items-center justify-center">
               <a
                 href="https://docs.google.com/document/d/18VpBQbvjQA_lb_f8rumM5fRU6IVJ_hNJKfn3I_0N69o/edit?usp=drivesdk"
                 target="_blank"
               >
                 <p>PAM NFT</p>
               </a>
-            </div>
+            </div> */}
             <a
               href="https://coinmarketcap.com/currencies/pam/"
               target="_blank"
