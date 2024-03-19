@@ -58,12 +58,12 @@ const Whitepaper = (props: Props) => {
                 17% (17 Trillion Pam)
               </h2>
               <h2>
-                <span className="">- Team: </span>
-                5% (5 Trillion Pam)
+                <span className="">- Marketing: </span>
+                7% (7 Trillion Pam)
               </h2>
               <h2>
-                <span className="">- Marketing: </span>
-                4% (4 Trillion Pam)
+                <span className="">- Airdrop: </span>
+                2.8% (2.8 Trillion Pam)
               </h2>
             </p>
             <p>
